@@ -1,31 +1,92 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* Google Font import */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700&display=swap');
 
-h1 {font-family:Arial, Helvetica, sans-serif;
-    text-align: center;
-    }
+html {
+	font-size: 16px;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
 
-h2 {font-family:Helvetica;
-    text-align: left;
+h2 {
+	font-family: Helvetica;
+	text-align: left;
 }
 
 #name {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
 }
 #descrip {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: left;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: left;
 }
 #assign {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
 }
 #due {
-    font-size: 10px;
-    font-weight: bold;
-    text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
 }
 
+.container {
+	border: 1px solid rgb(97, 97, 97);
+	width: 400px;
+	font-family: 'Source Sans Pro', sans-serif;
+	border-radius: .5rem;
+	margin: 10px;
+	overflow: hidden;
+}
+.container .header {
+	font-size: 2rem;
+	font-weight: 600;
+	color: rgb(107, 107, 107);
+	background-color: rgb(223, 223, 223);
+	padding: 10px;
+}
+
+.description {
+	height: 100px;
+	margin: 15px 20px;
+	font-size: 1.3rem;
+}
+.taskFooter {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 10px 5px;
+}
+
+.date {
+	color: orange;
+}
+.buttonContainer {
+}
+
+.container .taskFooter .buttonContainer .buttonDone {
+	background-color: green;
+	padding: 5px 10px;
+	border: none;
+	border-radius: .5rem;
+	display: flex;
+	border: 1px solid green;
+	justify-content: right;
+	color: white;
+	transition-duration: 0.4s;
+}
+
+.container .taskFooter .buttonContainer .buttonDone:hover {
+	color: green;
+	background-color: white;
+	padding: 5px 10px;
+}
