@@ -62,7 +62,6 @@ h2 {
 	font-size: 1.3rem;
 }
 .taskFooter {
-	background-color: yellow;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 10px 5px;
@@ -74,11 +73,20 @@ h2 {
 .buttonContainer {
 }
 
-.container .taskFooter .buttonDone {
+.container .taskFooter .buttonContainer .buttonDone {
 	background-color: green;
 	padding: 5px 10px;
 	border: none;
 	border-radius: .5rem;
 	display: flex;
+	border: 1px solid green;
 	justify-content: right;
+	color: white;
+	transition-duration: 0.4s;
+}
+
+.container .taskFooter .buttonContainer .buttonDone:hover {
+	color: green;
+	background-color: white;
+	padding: 5px 10px;
 }
